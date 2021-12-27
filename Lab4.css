@@ -1,0 +1,24 @@
+h1{
+	font: cursive;
+	color: brown;
+}
+.board{
+	background-color: mintcream;
+	border: 1px solid lavender;
+	padding: 20px;
+	margin-left:425px;
+	margin-top: 50px;
+	width: 500px;
+}
+.result{
+	background-color: mintcream;
+	margin-left: 10px;
+}
+.text{
+	margin-left: 15px;
+}
+.droplist{
+	width: 200px;
+	
+	background: #fff;
+}

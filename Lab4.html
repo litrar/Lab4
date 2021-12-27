@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Lab4.css">
+</head>
+<body>
+	<div class="board" align="center"; >
+		<h1>JS calculator</h1>
+		<p>Number 1</p>
+		<input type="text" id="num1">
+		<p>Number 2</p>
+		<input type="text" id="num2">
+		<p>Operate way?</p>
+		
+		<select id="operator" class="droplist">
+			<option value="+" id="plus">+</option>
+			<option value="-" id="minus">-</option>
+			<option value="×" id="multiply">×</option>
+			<option value="÷" id="divide">÷</option>
+		</select>
+		<p>
+		<button value="Go" id="button" onclick="run()">Add</button>
+		<p>
+		result = <input type="text" id="result" class="result">
+
+	</div>
+
+	<script type="text/javascript">
+		
+		function run(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+			var select = document.getElementById("operator").value;
+
+			if(select == "+"){
+				document.getElementById("result").value = Number(num1) + Number(num2);
+				document.getElementById("button").innerText = "Add";
+			}else if (select == "-") {
+				document.getElementById("result").value = Number(num1) - Number(num2);
+				document.getElementById("button").innerText = "Minus";
+			}else if (select == "×"){
+				document.getElementById("result").value = Number(num1) * Number(num2);
+				document.getElementById("button").innerText = "Multiply";
+			}else{
+				document.getElementById("result").value = Number(num1)/Number(num2);
+				document.getElementById("button").innerText = "Divide";
+			}
+		}
+		
+	</script>
+	
+
+
+</body>
+</html>
